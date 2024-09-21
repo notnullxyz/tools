@@ -1,3 +1,24 @@
+"""
+system_report.py
+
+Purpose:
+This script gathers basic system information, creates an HTML email, and sends it. It is designed for use on a server where it can be executed daily via a cron job.
+
+Basic Setup Instructions:
+1. Create the directory: mkdir -p /opt/system_report
+2. Change ownership: sudo chown $USER:$USER /opt/system_report
+3. Copy the script: clone and 'cp system_report.py /opt/system_report'
+4. Edit email addresses: Update the sender and recipient addresses in the 'send_email' function
+5. Set executable permission: chmod +x /opt/system_report/system_report.py
+6. Configure cron job: Use 'crontab -e' and add a line for execution, e.g., '0 6 * * * /usr/bin/python3 /opt/system_report/system_report.py'
+7. Ensure email tools are installed: Install 'mailutils' or another SMTP package
+8. For fun addition, install 'fortune-mod' for a random fortune in the email
+9. Test the script manually: /usr/bin/python3 /opt/system_report/system_report.py
+
+Author: marlonv@pm.me
+Date: 2024/09/21
+"""
+
 import subprocess
 import random
 
