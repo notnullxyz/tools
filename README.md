@@ -17,6 +17,8 @@ To use any script from this repository, clone the repository to your local machi
 |--------------------------|----------|-----------------------------------------------------------------------------|
 | `nuke-docker-star.sh`    | Bash     | Completely nuke and cleanup the Docker environment. Destructive.            |
 | `system_report.py`       | Python   | Basic system report for automatic daily mailing from your server.           |
+| `bad_patat.py`           | Python   | For DaVinci Resolve(Linux). Convert the H264 stuff to DNxHD - Multithreaded |
+
 
 ## Contribution
 Contributions are welcome. If you have a useful script or tool that you'd like to add to this repository, please submit a pull request. Ensure that your script includes a clear description and any necessary instructions in its header.
